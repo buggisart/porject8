@@ -1,4 +1,5 @@
 import io.qameta.allure.Description;
+import io.qameta.allure.junit4.DisplayName;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
@@ -28,6 +29,7 @@ public class AccountTestIncorrect {
     }
 
     @Test
+    @DisplayName("accountNameIncorrect")
     @Description("Test incorrect account name")
     public void accountNameIncorrect() {
         Account account = new Account(name);
