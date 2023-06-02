@@ -1,3 +1,4 @@
+import io.qameta.allure.Description;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
@@ -26,6 +27,7 @@ public class AccountTestCorrect {
     }
 
     @Test
+    @Description("Test correct account name")
     public void accountNameCorrect() {
         Account account = new Account(name);
         boolean actualResult = account.checkNameToEmboss();
